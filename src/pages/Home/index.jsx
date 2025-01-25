@@ -1,8 +1,9 @@
 import { useEffect, useState, useRef } from "react";
 import "./style.css";
 import Trash from "../../assets/trash.svg";
-import { use } from "react";
+import Pencil from "../../assets/pencil.svg";
 import api from '../../services/api'
+
 
 function Home() {
   const [users, setUsers] = useState([])
@@ -60,9 +61,14 @@ function Home() {
             </p>
           </div>
 
-          <button onClick={() => deleteUsers(user.id)}>
-            <img src={Trash} />
-          </button>
+          <div className="editMenu">
+            <button className="edit">
+              <img src={Pencil} />
+            </button>
+            <button onClick={() => deleteUsers(user.id)} className="delete">
+              <img src={Trash} />
+            </button>
+          </div>
         </div>
       ))}
     </div>

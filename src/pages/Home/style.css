@@ -66,18 +66,37 @@ form {
     }
   }
 
-  & button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  & .editMenu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
-    & img {
-      width: 70%;
-      height: auto;
+    & .edit {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+  
+      & img {
+        width: 78%;
+        height: auto;
+        opacity: 0.7;
+      }
+    }
+
+    & .delete {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+  
+      & img {
+        width: 70%;
+        height: auto;
+      }
+    }
+  
+    & button:hover {
+      opacity: 0.5;
     }
   }
-
-  & button:hover {
-    opacity: 0.5;
-  }
+  
 }
