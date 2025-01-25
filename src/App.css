@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  min-height: 1080;
+  min-width: 100vw;
+  background: linear-gradient(180deg, #363467 0%, rgba(30, 29, 79, 0.8) 100%);
+}
+
+/* Barra superior */
+.top-bar {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 7px 10px;
+  text-align: center;
+  font-size: 12px; /* Texto menor */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  line-height: 1.2;
+  height: 30px;
+}
+
+main {
+  flex: 1; /* Faz o conteúdo expandir para empurrar o rodapé para baixo */
+  padding: 20px;
+}
+
+/* Estilização do rodapé */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  bottom: 10px;
+  width: 100%;
+  font-size: 14px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  height: 335px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer .social-links a {
+  color: #4caf50;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: #ff9800;
+}
