@@ -3,6 +3,7 @@
   align-items: center;
   flex-direction: column;
   padding-top: 100px;
+  min-height: 857px;
 }
 
 h1 {
